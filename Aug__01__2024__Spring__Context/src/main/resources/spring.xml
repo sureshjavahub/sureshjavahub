@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="s1" class="test.Student">
+<property name="id" value="2"></property>
+<property name="name" value="A"></property>
+<property name="fee" value="2000"></property>
+</bean>
+
+<bean id="s3" class="test.Student">
+<property name="hello" ref="s1"></property>
+
+
+</bean>
+
+
+
+
+</beans>
